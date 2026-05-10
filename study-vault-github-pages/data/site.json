@@ -1,0 +1,11 @@
+{
+  "name": "Study Vault",
+  "version": "1.0.0",
+  "subjectFiles": [
+    "math.json",
+    "korean.json",
+    "english.json",
+    "science.json",
+    "history.json"
+  ]
+}

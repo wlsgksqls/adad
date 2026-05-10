@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>소개 | Study Vault</title>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">SV</span><span><strong>Study Vault</strong><small>소개</small></span></a>
+    <nav class="top-nav">
+      <a href="./explorer.html">탐색</a>
+      <a href="./library.html">자료실</a>
+      <a class="active" href="./about.html">소개</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button">◐</button>
+  </header>
+  <main class="simple-page about-page">
+    <p class="eyebrow">About</p>
+    <h1>Study Vault는 이런 구조입니다.</h1>
+    <div class="about-grid">
+      <article>
+        <h2>콘텐츠</h2>
+        <p>`data/subjects/*.json`에 과목별 단원과 문제를 넣습니다. 사이트는 이 데이터를 읽어서 자동으로 화면을 구성합니다.</p>
+      </article>
+      <article>
+        <h2>디자인</h2>
+        <p>`assets/css`의 세 파일을 역할별로 나눴습니다. 색상은 `base.css`의 CSS 변수만 바꾸면 전체에 적용됩니다.</p>
+      </article>
+      <article>
+        <h2>기능</h2>
+        <p>`assets/js`에서 검색, 필터, 즐겨찾기, 테마 변경을 담당합니다. 서버가 없어도 작동합니다.</p>
+      </article>
+    </div>
+    <a class="btn primary" href="../docs/EDITING.md">수정 가이드 보기</a>
+  </main>
+  <script type="module" src="../assets/js/theme.js"></script>
+</body>
+</html>

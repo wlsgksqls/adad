@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자료실 | Study Vault</title>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">SV</span><span><strong>Study Vault</strong><small>자료실</small></span></a>
+    <nav class="top-nav">
+      <a href="./explorer.html">탐색</a>
+      <a class="active" href="./library.html">자료실</a>
+      <a href="./about.html">소개</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button">◐</button>
+  </header>
+  <main class="simple-page">
+    <p class="eyebrow">Library</p>
+    <h1>자료실</h1>
+    <p class="lead">시험 범위, 요약 노트, 링크 모음 같은 자료를 카드로 정리하는 공간입니다.</p>
+    <section id="resourceGrid" class="resource-grid"></section>
+  </main>
+  <script type="module" src="../assets/js/library.js"></script>
+</body>
+</html>

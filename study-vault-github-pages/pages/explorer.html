@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>탐색 | Study Vault</title>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">SV</span>
+      <span><strong>Study Vault</strong><small>탐색</small></span>
+    </a>
+    <nav class="top-nav">
+      <a class="active" href="./explorer.html">탐색</a>
+      <a href="./library.html">자료실</a>
+      <a href="./about.html">소개</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button">◐</button>
+  </header>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="search-box">
+        <label for="searchInput">검색</label>
+        <input id="searchInput" type="search" placeholder="예: 함수, 문학, 광합성" />
+      </div>
+
+      <div class="filter-block">
+        <h2>과목</h2>
+        <div id="subjectFilters" class="pill-list"></div>
+      </div>
+
+      <div class="filter-block">
+        <h2>수준</h2>
+        <div id="levelFilters" class="pill-list"></div>
+      </div>
+
+      <div class="tip-card">
+        <strong>관리 팁</strong>
+        <p>새 과목은 `data/subjects`에 JSON을 추가하고 `data/site.json`에 등록하면 됩니다.</p>
+      </div>
+    </aside>
+
+    <section class="content-area">
+      <div class="content-toolbar">
+        <div>
+          <p class="eyebrow">Knowledge Explorer</p>
+          <h1>단원 탐색</h1>
+        </div>
+        <select id="sortSelect" aria-label="정렬">
+          <option value="default">기본 정렬</option>
+          <option value="title">제목순</option>
+          <option value="subject">과목순</option>
+        </select>
+      </div>
+
+      <div id="resultCount" class="result-count"></div>
+      <div id="unitList" class="unit-list"></div>
+    </section>
+  </main>
+
+  <dialog id="unitDialog" class="unit-dialog">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="닫기">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script type="module" src="../assets/js/explorer.js"></script>
+</body>
+</html>

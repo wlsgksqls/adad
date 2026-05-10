@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Vault | 지식창고</title>
+  <meta name="description" content="과목별·수준별 개념 정리와 문제를 모아두는 정적 지식창고 사이트" />
+  <meta property="og:title" content="Study Vault" />
+  <meta property="og:description" content="국영수사과를 한곳에 정리하는 정적 지식창고" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Study Vault 홈">
+      <span class="brand-mark">SV</span>
+      <span>
+        <strong>Study Vault</strong>
+        <small>정적 지식창고</small>
+      </span>
+    </a>
+    <nav class="top-nav" aria-label="주요 메뉴">
+      <a href="./pages/explorer.html">탐색</a>
+      <a href="./pages/library.html">자료실</a>
+      <a href="./pages/about.html">소개</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="테마 변경">◐</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GitHub Pages Ready</p>
+        <h1>과목별 지식을<br />카드처럼 꺼내보는 창고.</h1>
+        <p class="hero-desc">
+          수학, 국어, 영어, 과학, 한국사를 수준별로 정리하고,
+          단원별 핵심 개념과 이해 문제를 데이터 파일로 관리합니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="./pages/explorer.html">지식창고 열기</a>
+          <a class="btn ghost" href="./docs/EDITING.md">수정 방법 보기</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="사이트 미리보기 카드">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="floating-card card-main">
+          <span class="chip">오늘의 추천</span>
+          <h2>수학 · 고등학생</h2>
+          <p>다항식부터 수열까지 개념 흐름을 한눈에 확인</p>
+          <div class="progress-line"><span style="width:72%"></span></div>
+        </div>
+        <div class="floating-card card-side">
+          <strong>3문제</strong>
+          <small>개념 확인</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-head">
+      <p class="eyebrow">Subjects</p>
+      <h2>무엇을 공부할까요?</h2>
+    </section>
+
+    <section id="subjectGrid" class="subject-grid" aria-live="polite"></section>
+
+    <section class="feature-grid">
+      <article class="feature">
+        <span>01</span>
+        <h3>JSON으로 콘텐츠 관리</h3>
+        <p>HTML을 매번 수정하지 않고 `data/subjects/*.json`만 고치면 단원과 문제가 바뀝니다.</p>
+      </article>
+      <article class="feature">
+        <span>02</span>
+        <h3>GitHub Pages 친화적</h3>
+        <p>빌드 과정 없이 ZIP을 풀고 그대로 업로드하면 작동하는 순수 HTML/CSS/JS 구조입니다.</p>
+      </article>
+      <article class="feature">
+        <span>03</span>
+        <h3>검색·즐겨찾기</h3>
+        <p>단원 검색, 과목 필터, 즐겨찾기를 브라우저 저장소에 보관합니다.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Study Vault. 정적 사이트 템플릿.</p>
+    <a href="./docs/DEPLOY.md">배포 가이드</a>
+  </footer>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
